@@ -1,0 +1,36 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__box {
+  @include flex-center();
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+
+.features__title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: var(--mainLetterSpacing);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features__text {
+  line-height: 1.71;
+  letter-spacing: var(--mainLetterSpacing);
+  color: var(--secondFontColor)
+}
+
+
