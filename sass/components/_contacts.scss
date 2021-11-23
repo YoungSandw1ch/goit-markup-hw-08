@@ -43,12 +43,48 @@
 .contacts__item {
 
   &:not(:last-child) {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 10px;
-    }
+    // @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    //   margin-bottom: 10px;
+    // }
 
     @media screen and (min-width: $desktop) {
       margin-right: 50px;
     }
   }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--secondFontColor);
+  transition: color var(--mainTransitionTime) var(--mainTransition);
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--brandColor);
+  }
+}
+
+.contacts__link--top-padding {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+}
+
+.contacts__link--bottom-padding {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-bottom: 21px;
+    padding-top: 5px;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
