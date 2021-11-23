@@ -86,6 +86,7 @@ body {
 .page-header {
   letter-spacing: 0.02em;
   font-weight: 500;
+  line-height: 1.14;
   border-bottom: 1px solid #ececec;
 }
 
@@ -126,7 +127,7 @@ body {
 @media screen and (min-width: 1200px) {
   .menu__logo {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
   }
 }
@@ -135,7 +136,7 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: var(--mainLetterSpacing);
   text-decoration: none;
   color: var(--brandColor);
@@ -250,10 +251,19 @@ body {
   transition: color var(--mainTransitionTime) var(--mainTransition);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -275,8 +285,27 @@ body {
   }
 }
 
-.contacts__icon {
+.contacts__icon-mail {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.contacts__icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts__icon-smartphone {
+    width: 10px;
+    height: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

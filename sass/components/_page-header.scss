@@ -25,6 +25,7 @@
 .page-header {
   letter-spacing: 0.02em;
   font-weight: 500;
+  line-height: 1.14;
   border-bottom: 1px solid #ececec;
 }
 
@@ -59,7 +60,7 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
   }
 }

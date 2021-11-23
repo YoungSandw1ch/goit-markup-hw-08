@@ -43,10 +43,6 @@
 .contacts__item {
 
   &:not(:last-child) {
-    // @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    //   margin-bottom: 10px;
-    // }
-
     @media screen and (min-width: $desktop) {
       margin-right: 50px;
     }
@@ -59,9 +55,16 @@
   color: var(--secondFontColor);
   transition: color var(--mainTransitionTime) var(--mainTransition);
 
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 
   &:focus,
@@ -84,7 +87,22 @@
   }
 }
 
-.contacts__icon {
+.contacts__icon-mail {
   fill: currentColor;
   margin-right: 10px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.contacts__icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 10px;
+    height: 14px;
+  }
 }
