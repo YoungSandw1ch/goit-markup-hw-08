@@ -25,3 +25,38 @@
 //   }
 // }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+//   &--no-padding {
+//     padding-top: 0;
+//   }
+//   &--dark-bg {
+//     background-color: var(--sectionBg);
+//   }
+// }
+
+// .section__filter {
+//   margin-bottom: 50px;
+// }
+
+// .section__title {
+//   font-size: 36px;
+//   font-weight: 700;
+//   letter-spacing: var(--mainLetterSpacing);
+
+//   &--bottom-indent {
+//     margin-bottom: 50px;
+//     text-align: center;
+//   }
+}
