@@ -1,29 +1,54 @@
+// .contacts {
+//   display: flex;
+// }
+
+// .contacts__item{
+
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .contacts__link {
+//   display: flex;
+//   align-items: center;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   color: var(--secondFontColor);
+//   transition: color var(--mainTransitionTime) var(--mainTransition);
+
+//   &:focus,
+//   &:hover {
+//     color: var(--brandColor);
+//   }
+// }
+
+// .contacts__icon {
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
+
 .contacts {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
-.contacts__item{
+.contacts__item {
 
   &:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
   }
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--secondFontColor);
-  transition: color var(--mainTransitionTime) var(--mainTransition);
-
-  &:focus,
-  &:hover {
-    color: var(--brandColor);
-  }
-}
-
-.contacts__icon {
-  fill: currentColor;
-  margin-right: 10px;
 }
