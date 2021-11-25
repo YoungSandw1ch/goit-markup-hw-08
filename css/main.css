@@ -102,12 +102,10 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu__logo {
@@ -130,6 +128,32 @@ body {
     padding-bottom: 25px;
     margin-right: 93px;
   }
+}
+
+.menu__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
+.menu__button:focus, .menu__button:hover {
+  color: var(--brandColor);
+}
+
+.menu__icon {
+  fill: currentColor;
 }
 
 .logo {
