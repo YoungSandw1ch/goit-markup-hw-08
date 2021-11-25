@@ -12,7 +12,7 @@
   letter-spacing: 0.02em;
   font-weight: 500;
 
-  transform: translateY(-100%);
+  transform: translateX(100%);
   transition: transform var(--mainTransitionTime) var(--mainTransition);
 
   &.is-open {
