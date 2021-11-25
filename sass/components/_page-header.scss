@@ -1,27 +1,3 @@
-// .page-header {
-//   letter-spacing: 0.02em;
-//   font-weight: 500;
-//   border-bottom: 1px solid #ececec;
-// }
-
-// .page-header__container {
-//   display: flex;
-// }
-
-// .page-header__contacts {
-//   margin-left: auto;
-// }
-
-// .menu {
-//   display: flex;
-// }
-
-// .menu__logo {
-//   padding-top: 24px;
-//   padding-bottom: 24px;
-//   margin-right: 93px;
-// }
-
 .page-header {
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -38,47 +14,4 @@
 
 .page-header__contacts {
   margin-left: auto;
-}
-
-.menu {
-  display: flex;
-}
-
-.menu__logo {
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-right: 88px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-  }
-}
-
-.menu__button {
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
-  margin-left: auto;
-  background-color: transparent;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-
-  &:focus,
-  &:hover {
-    color: var(--brandColor);
-  }
-}
-
-.menu__icon {
-  fill: currentColor;
 }
