@@ -119,19 +119,37 @@
         <h2 class="section__title section__title--bottom-indent">Чем мы занимаемся</h2>
         <ul class="works">
           <li class="works__item">
-            <img src="./images/what-we-do/what-we-do-1.jpg" alt=" пишет код на клавиатуре" width="370">
+            <picture>
+              <source srcset="./images/what-we-do/what-we-do-1.webp 1x, ./images/what-we-do/what-we-do-1@2x.webp 2x"
+                type="image/webp" />
+              <source srcset="./images/what-we-do/what-we-do-1.jpg 1x, ./images/what-we-do/what-we-do-1@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/what-we-do/what-we-do-1.jpg" alt=" пишет код на клавиатуре" width="370" />
+            </picture>
             <div class="works__box">
               <p class="works__label">Десктопные приложения</p>
             </div>
           </li>
           <li class="works__item">
-            <img src="./images/what-we-do/what-we-do-2.jpg" alt=" делает адаптацию под телефон" width="370">
+            <picture>
+              <source srcset="./images/what-we-do/what-we-do-2.webp 1x, ./images/what-we-do/what-we-do-2@2x.webp 2x"
+                type="image/webp" />
+              <source srcset="./images/what-we-do/what-we-do-2.jpg 1x, ./images/what-we-do/what-we-do-2@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/what-we-do/what-we-do-2.jpg" alt=" делает адаптацию под телефон" width="370" />
+            </picture>
             <div class="works__box">
               <p class="works__label">Мобильные приложения</p>
             </div>
           </li>
           <li class="works__item">
-            <img src="./images/what-we-do/what-we-do-3.jpg" alt=" работает в редакторе цвета" width="370">
+            <picture>
+              <source srcset="./images/what-we-do/what-we-do-3.webp 1x, ./images/what-we-do/what-we-do-3@2x.webp 2x"
+                type="image/webp" />
+              <source srcset="./images/what-we-do/what-we-do-3.jpg 1x, ./images/what-we-do/what-we-do-3@2x.jpg 2x"
+                type="image/jpeg" />
+              <img src="./images/what-we-do/what-we-do-3.jpg" alt=" работает в редакторе цвета" width="370" />
+            </picture>
             <div class="works__box">
               <p class="works__label">Дизайнерские решения</p>
             </div>
@@ -147,7 +165,24 @@
         <h2 class="section__title section__title--bottom-indent">Наша команда</h2>
         <ul class="team">
           <li class="team__item">
-            <img class="team__img" src="./images/team/team-1.jpg" alt="член команды мужчина" width="450" height="460">
+            <picture>
+              <source srcset="./images/team/team-1.webp 1x, ./images/team/team-1@2x.webp 2x" type="image/webp"
+                media="(max-width: 767px)" />
+              <source srcset="./images/team/team-1.jpg 1x, ./images/team/team-1@2x.jpg 2x" type="image/jpeg"
+                media="(max-width: 767px)" />
+
+              <source srcset="./images/team/tablet/team-1-tab.webp 1x, ./images/team/tablet/team-1-tab@2x.webp 2x"
+                type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" />
+              <source srcset="./images/team/tablet/team-1-tab.jpg 1x, ./images/team/tablet/team-1-tab@2x.jpg 2x"
+                type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)" />
+
+              <source srcset="./images/team/team-1.webp 1x, ./images/team/team-1@2x.webp 2x" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/team-1.jpg 1x, ./images/team/team-1@2x.jpg 2x" type="image/jpeg"
+                media="(min-width: 1200px)" />
+              <img class="team__img" src="./images/team/team-1.jpg" alt=" член команды мужчина" width="450"
+                height="460" />
+            </picture>
             <div class="team__box">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
