@@ -1,33 +1,3 @@
-// .contacts {
-//   display: flex;
-// }
-
-// .contacts__item{
-
-//   &:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
-
-// .contacts__link {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   color: var(--secondFontColor);
-//   transition: color var(--mainTransitionTime) var(--mainTransition);
-
-//   &:focus,
-//   &:hover {
-//     color: var(--brandColor);
-//   }
-// }
-
-// .contacts__icon {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
-
 .contacts {
   display: none;
 
@@ -74,14 +44,14 @@
 }
 
 .contacts__link--top-padding {
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     padding-top: 21px;
     padding-bottom: 5px;
   }
 }
 
 .contacts__link--bottom-padding {
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     padding-bottom: 21px;
     padding-top: 5px;
   }
@@ -91,7 +61,7 @@
   fill: currentColor;
   margin-right: 10px;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     width: 14px;
     height: 10px;
   }
@@ -101,7 +71,7 @@
   fill: currentColor;
   margin-right: 10px;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     width: 10px;
     height: 14px;
   }

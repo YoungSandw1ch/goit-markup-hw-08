@@ -420,14 +420,14 @@ body.modal-open {
   color: var(--brandColor);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts__link--top-padding {
     padding-top: 21px;
     padding-bottom: 5px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts__link--bottom-padding {
     padding-bottom: 21px;
     padding-top: 5px;
@@ -439,7 +439,7 @@ body.modal-open {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts__icon-mail {
     width: 14px;
     height: 10px;
@@ -451,7 +451,7 @@ body.modal-open {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts__icon-smartphone {
     width: 10px;
     height: 14px;
@@ -664,7 +664,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
         flex-basis: calc((100% - 2 * 30px) / 2);
@@ -781,6 +781,9 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -795,8 +798,22 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
-        flex-basis: calc((100% - 3 * 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
   }
 }
 
