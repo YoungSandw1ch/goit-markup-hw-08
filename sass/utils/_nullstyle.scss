@@ -27,7 +27,6 @@ a {
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -36,5 +35,8 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--firstFontColor);
   background-color: var(--nullBg);
-  overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
