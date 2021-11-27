@@ -842,6 +842,81 @@ body.modal-open {
   }
 }
 
+.team__box {
+  font-size: 16px;
+  letter-spacing: var(--mainLetterSpacing);
+  text-align: center;
+  padding: 30px 32px 24px 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__box {
+    padding-bottom: 30px;
+  }
+}
+
+.team__title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.team__text {
+  margin-bottom: 16px;
+  color: var(--secondFontColor);
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: var(--iconColor);
+  border-radius: 50%;
+  -webkit-transition: background-color var(--mainTransitionTime) var(--mainTransition), color var(--mainTransitionTime) var(--mainTransition);
+  transition: background-color var(--mainTransitionTime) var(--mainTransition), color var(--mainTransitionTime) var(--mainTransition);
+}
+
+.social__link--dark-bg {
+  color: var(--nullBg);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social__link:focus, .social__link:hover {
+  background-color: var(--brandColor);
+  color: var(--nullBg);
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
