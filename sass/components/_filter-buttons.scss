@@ -1,35 +1,48 @@
-// .filter {
-//   display: flex;
-//   justify-content: center;
-// }
+.filter {
+  display: flex;
 
-// .filter__item {
+  @media screen and (max-width: 767.5px) {
+    flex-wrap: wrap;
+  }
 
-//   &:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+}
 
-// .filter__btn {
-//   font-size: 16px;
-//   line-height: 1.62;
-//   letter-spacing: var(--mainLetterSpacing);
-//   font-weight: 500;
+.filter__item {
 
-//   padding: 6px 22px;
-//   border-radius: 4px;
-//   background-color: var(--sectionBg);
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media screen and (max-width: 767.5px) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.filter__btn {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: var(--mainLetterSpacing);
+  font-weight: 500;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: var(--sectionBg);
   
-//   transition: color var(--mainTransitionTime) var(--mainTransition), 
-//   background-color var(--mainTransitionTime) var(--mainTransition), 
-//   box-shadow var(--mainTransitionTime) var(--mainTransition);
+  transition: color var(--mainTransitionTime) var(--mainTransition), 
+  background-color var(--mainTransitionTime) var(--mainTransition), 
+  box-shadow var(--mainTransitionTime) var(--mainTransition);
 
-//   &:focus,
-//   &:hover {
-//     color: var(--lightFontColor);
-//     background-color: var(--brandColor);
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//   }
-// }
+  &:focus,
+  &:hover {
+    color: var(--lightFontColor);
+    background-color: var(--brandColor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
 
 

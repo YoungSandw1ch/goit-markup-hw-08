@@ -65,7 +65,30 @@
           <li class="portfolio__item">
             <a class="portfolio__link" href="#0">
               <div class="portfolio__thumb">
-                <img src="./images/portfolio-image/portfolio-1.jpg" alt="веб сайт технокряк" width="370" height="294">
+                <picture>
+                  <source
+                    srcset="./images/portfolio-image/mobile/portfolio-1-mob.webp 1x, ./images/portfolio-image/mobile/portfolio-1-mob@2x.webp 2x"
+                    type="image/webp" media="(max-width: 767px)" />
+                  <source
+                    srcset="./images/portfolio-image/mobile/portfolio-1-mob.jpg 1x, ./images/portfolio-image/mobile/portfolio-1-mob@2x.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+
+                  <source
+                    srcset="./images/portfolio-image/portfolio-1.webp 1x, ./images/portfolio-image/portfolio-1@2x.webp 2x"
+                    type="image/webp" media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/portfolio-image/portfolio-1.jpg 1x, ./images/portfolio-image/portfolio-1@2x.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+
+                  <source
+                    srcset="./images/portfolio-image/portfolio-1.webp 1x, ./images/portfolio-image/portfolio-1.webp 2x"
+                    type="image/webp" media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/portfolio-image/portfolio-1.jpg 1x, ./images/portfolio-image/portfolio-1.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <img class="portfolio__img" src="./images/portfolio-image/portfolio-1.jpg" alt="веб сайт технокряк"
+                    width="370" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__description">Технокряк это современная площадка распространения коронавируса.
                     Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -230,7 +253,7 @@
       <!----------------------------------social-links---------------------------->
       <div class="page-footer__box">
         <p class="page-footer__text">присоединяйтесь</p>
-        <ul class="social social--no-indent">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--dark-bg" href="#0" target="_blank" rel="noreferrer noopener"
               aria-label="instagram">

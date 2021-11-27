@@ -22,9 +22,13 @@
   background-color: var(--sectionBg);
 }
 
-// .section__filter {
-//   margin-bottom: 50px;
-// }
+.section__filter {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
 
 .section__title {
   font-size: 28px;
