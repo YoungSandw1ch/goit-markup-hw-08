@@ -1003,6 +1003,7 @@ body.modal-open {
   background-color: var(--mainBg);
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1311,7 +1312,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .portfolio__img {
     width: 354px;
   }
@@ -1373,6 +1374,12 @@ body.modal-open {
   background-color: var(--nullBg);
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .portfolio__box {
+    min-height: 146px;
+  }
 }
 
 .portfolio__title {

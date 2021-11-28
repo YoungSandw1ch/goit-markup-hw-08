@@ -40,7 +40,7 @@
 
   }
 
-  @media screen and (max-width: 1199.5px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     width: 354px;
   }
 }
@@ -93,6 +93,10 @@
 	background-color: var(--nullBg);
 	border: 1px solid #eeeeee;
 	border-top: none;
+
+	@media screen and (min-width: $tablet) and (max-width: 1199.5px) {
+    min-height: 146px;
+  }
 }
 
 .portfolio__title {
