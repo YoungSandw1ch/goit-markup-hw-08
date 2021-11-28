@@ -12,7 +12,7 @@
   visibility var(--mainTransitionTime) linear;
   overflow-y: scroll;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.5px) {
     padding: 93px 0;
   }
 }
@@ -49,7 +49,7 @@
   opacity var(--mainTransitionTime) var(--mainTransition);
   transform: scale(1);
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.5px) {
     margin: 0 auto;
   }
 

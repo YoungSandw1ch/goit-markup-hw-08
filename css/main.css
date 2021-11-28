@@ -1411,7 +1411,7 @@ body.modal-open {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.5px) {
   .backdrop {
     padding: 93px 0;
   }
@@ -1454,7 +1454,7 @@ body.modal-open {
           transform: scale(1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.5px) {
   .modal {
     margin: 0 auto;
   }
