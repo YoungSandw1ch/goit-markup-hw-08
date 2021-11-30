@@ -26,7 +26,11 @@
     opacity: 0;
     transform: scale(1.2);
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $mobile) {
+      transform: translateX(-50%) scale(1.2);
+    }
+
+    @media screen and (min-width: $tablet) {
       transform: translate(-50%, -50%) scale(1.2);
     }
   }
@@ -35,7 +39,6 @@
 .modal {
   position: relative;
   padding: 40px;
-  // width: 450px;
   border-radius: 4px;
   background-color: var(--nullBg);
   opacity: 1;
@@ -53,16 +56,19 @@
     left: 50%;
     transform: translateX(-50%) scale(1);
     width: 450px;
-    // min-height: 581px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: $desktop) {
-    // position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
-    // min-height: 581px;
   }
 }
 

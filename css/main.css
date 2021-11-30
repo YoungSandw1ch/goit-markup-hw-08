@@ -1490,7 +1490,14 @@ body.modal-open {
           transform: scale(1.2);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
+  .backdrop--hidden .modal {
+    -webkit-transform: translateX(-50%) scale(1.2);
+            transform: translateX(-50%) scale(1.2);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .backdrop--hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(1.2);
             transform: translate(-50%, -50%) scale(1.2);
@@ -1521,6 +1528,15 @@ body.modal-open {
     -webkit-transform: translateX(-50%) scale(1);
             transform: translateX(-50%) scale(1);
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
