@@ -3,6 +3,7 @@
 
   @media screen and (max-width: 767.5px) {
     flex-wrap: wrap;
+    margin-top: -15px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -12,14 +13,12 @@
 
 .filter__item {
 
-  &:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (max-width: 767.5px) {
+    margin-top: 15px;
   }
 
-  &:nth-last-child(-n + 2) {
-    @media screen and (max-width: 767.5px) {
-      margin-top: 15px;
-    }
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
