@@ -13,6 +13,11 @@
 .contacts__item {
 
   &:not(:last-child) {
+
+    @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
+      margin-bottom: 10px;
+    }
+
     @media screen and (min-width: $desktop) {
       margin-right: 50px;
     }
@@ -40,20 +45,6 @@
   &:focus,
   &:hover {
     color: var(--brandColor);
-  }
-}
-
-.contacts__link--top-padding {
-  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
-    padding-top: 21px;
-    padding-bottom: 5px;
-  }
-}
-
-.contacts__link--bottom-padding {
-  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
-    padding-bottom: 21px;
-    padding-top: 5px;
   }
 }
 

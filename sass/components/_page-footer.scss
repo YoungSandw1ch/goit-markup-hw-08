@@ -2,7 +2,6 @@
   background-color: var(--mainBg);
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: $mobile;
 }
 
 .page-footer__container {
@@ -14,6 +13,7 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -33,13 +33,9 @@
       margin-bottom: 60px;
     }
 
-    @media screen and (min-width: $tablet) {
-      margin-right: 165px;
-      flex-grow: 1;
-    }
-
     @media screen and (min-width: $desktop) {
       margin-right: 70px;
+      flex-grow: 1;
     }
   }
 
@@ -47,11 +43,6 @@
 
     @media screen and (max-width: 767.5px) {
       margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
-      margin-bottom: 102px;
-      flex-grow: 1;
     }
 
     @media screen and (min-width: $desktop) {
@@ -62,6 +53,7 @@
   &:nth-child(3) {
 
     @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
+      margin-top: 60px;
       flex-grow: 2;
     }
   }
