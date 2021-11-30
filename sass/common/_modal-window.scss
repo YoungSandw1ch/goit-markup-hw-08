@@ -12,8 +12,8 @@
   visibility var(--mainTransitionTime) linear;
   overflow-y: scroll;
 
-  @media screen and (max-width: 1199.5px) {
-    padding: 93px 0;
+  @media screen and (max-width: 479.5px) {
+    padding: 15px;
   }
 }
 
@@ -35,9 +35,7 @@
 .modal {
   position: relative;
   padding: 40px;
-  width: 450px;
-  min-height: 609px;
-
+  // width: 450px;
   border-radius: 4px;
   background-color: var(--nullBg);
   opacity: 1;
@@ -49,30 +47,38 @@
   opacity var(--mainTransitionTime) var(--mainTransition);
   transform: scale(1);
 
-  @media screen and (max-width: 1199.5px) {
-    margin: 0 auto;
+  @media screen and (min-width: $mobile) {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    width: 450px;
+    // min-height: 581px;
   }
 
   @media screen and (min-width: $desktop) {
-    position: absolute;
+    // position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
-    min-height: 581px;
-    transition: transform var(--mainTransitionTime) var(--mainTransition), 
-    opacity var(--mainTransitionTime) var(--mainTransition);
+    // min-height: 581px;
   }
 }
 
 .modal__text {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: var(--mainLetterSpacing);
   text-align: center;
   margin-bottom: 12px;
   color: var(--firstFontColor);
+
+  @media screen and (min-width: $mobile) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 
   @media screen and (min-width: $desktop) {
     line-height: 1.15;
