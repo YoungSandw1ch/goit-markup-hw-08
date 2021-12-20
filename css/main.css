@@ -1629,6 +1629,7 @@ body.modal-open {
   padding-left: 42px;
   padding-right: 10px;
   margin-top: 4px;
+  color: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition: border-color var(--mainTransitionTime) var(--mainTransition);
