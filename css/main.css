@@ -1589,10 +1589,15 @@ body.modal-open {
   border-radius: 50%;
   -webkit-transition: fill var(--mainTransitionTime) var(--mainTransition);
   transition: fill var(--mainTransitionTime) var(--mainTransition);
+  z-index: 50;
 }
 
 .modal__close:focus .modal__icon, .modal__close:hover .modal__icon {
   fill: var(--brandColor);
+}
+
+.modal__icon {
+  z-index: 50;
 }
 
 .form {

@@ -101,6 +101,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: fill var(--mainTransitionTime) var(--mainTransition);
+  z-index: 50;
 
   &:focus,
   &:hover {
@@ -108,4 +109,8 @@
       fill: var(--brandColor);
     }
   }
+}
+
+.modal__icon {
+  z-index: 50;
 }
