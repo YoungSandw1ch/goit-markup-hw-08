@@ -16,6 +16,9 @@
 button {
   border: 0;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 ul {
@@ -1597,7 +1600,8 @@ body.modal-open {
 }
 
 .modal__icon {
-  z-index: 50;
+  width: 18px;
+  height: 18px;
 }
 
 .form {
@@ -1761,6 +1765,8 @@ body.modal-open {
 }
 
 .agreement__icon {
+  min-width: 16px;
+  min-height: 15px;
   border: 1.8px solid var(--firstFontColor);
   border-radius: 2px;
   -webkit-transition: border-color var(--mainTransitionTime) var(--mainTransition), background-color var(--mainTransitionTime) var(--mainTransition);

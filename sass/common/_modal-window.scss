@@ -2,14 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;  
+  width: 100%;
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
   opacity: 1;
-  transition: opacity var(--mainTransitionTime) var(--mainTransition), 
-  visibility var(--mainTransitionTime) linear;
+  transition: opacity var(--mainTransitionTime) var(--mainTransition),
+    visibility var(--mainTransitionTime) linear;
   overflow-y: scroll;
 
   @media screen and (max-width: 479.5px) {
@@ -17,7 +17,7 @@
   }
 }
 
-.backdrop--hidden{
+.backdrop--hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -42,12 +42,10 @@
   border-radius: 4px;
   background-color: var(--nullBg);
   opacity: 1;
-  box-shadow: 
-  0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 1px 1px rgba(0, 0, 0, 0.14), 
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform var(--mainTransitionTime) var(--mainTransition), 
-  opacity var(--mainTransitionTime) var(--mainTransition);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--mainTransitionTime) var(--mainTransition),
+    opacity var(--mainTransitionTime) var(--mainTransition);
   transform: scale(1);
 
   @media screen and (min-width: $mobile) {
@@ -112,5 +110,6 @@
 }
 
 .modal__icon {
-  z-index: 50;
+  width: 18px;
+  height: 18px;
 }
